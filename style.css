@@ -1,0 +1,1088 @@
+  /* Team 3 - Gaming.com
+  ======================
+  2272003 - Ravel Setiady
+  2272028 - Nathaniel Valentino Robert  */
+
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+nav {
+  position: fixed;
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  height: 100px;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  align-items: center;
+  font-weight: bolder;
+  margin-top: 13px;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: lightgray;
+}
+
+.white-color {
+  color: white;
+}
+
+/* Threebars Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+  /* Threebars Menu Animation */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px , 0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  #carouselExampleControls{
+    width: 100%;
+    margin-top: 6.2em;
+  }
+
+  #our-product {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+  }
+  
+  .card-product-index{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5%;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+
+  .container-testi {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .testi-image {
+    border-radius: 100% ;
+  }
+
+  .card-testi{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5%;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+
+.shop-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    line-break: 100px;
+}
+
+.shop-item{
+  background-color: lightgray;
+  width: 1000px;
+  height: 600px;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+
+#shop-item{
+  background-color: lightgray;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+
+/* item product  */
+.shop-item-title{
+  transform: translateX(-240px) translateY(150px);
+  font-size: 45px;
+}
+.shop-item-title2{
+  transform: translateX(-240px) translateY(150px);
+  font-size: 45px;
+
+}
+.button1{
+  transform: translateX(-240px) translateY(150px);
+  width: auto;
+}
+
+.harga{
+  font-family: monospace;
+  font-weight: bold;
+  margin-right: 150px;
+  transform:translateY(170px)translateX(-172px);
+}
+.gambar-product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(200px) translateY(-125px);
+}
+/* end */
+
+.nama-produk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+}
+
+.nama-produk p {
+    line-height: 30px;
+}
+
+.harga-produk {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.legion5 {
+    margin-right: -3%;
+    width: 40%;
+}
+
+.rog {
+    margin-right: -5%;
+    width: 45%;
+}
+
+.omen {
+    margin-right: -5%;
+    width: 45%;
+}
+
+.keyboard1 {
+  width: 45%;
+  margin-top: -6%;
+  margin-right: -5%;
+}
+
+.keyboard2 {
+  width: 55%;
+  margin-right: -5%;
+  margin-top: 5%;
+}
+
+.mouse1 {
+  width: 45%;
+  margin-top: -4%;
+  margin-right: -5%;
+}
+
+.mouse2 {
+  width: 45%;
+  margin-top: -4%;
+  margin-right: -5%;
+}
+
+.headset1 {
+  width: 45%;
+  margin-right: -10%;
+  margin-top: -3%;
+}
+
+.headset2 {
+  width: 45%;
+  margin-top: -3%;
+  margin-right: -10%;
+}
+
+.deskmat1 {
+  width: 40%;
+  margin-right: -15%;
+}
+
+.deskmat2 {
+  width: 40%;
+  margin-right: -15%;
+}
+
+.list{
+  list-style: none;
+}
+
+.modal-content {
+  padding-top: 6em;
+}
+
+.modal {
+  width: 100px;
+}
+
+.discover{
+  text-align: center;
+  list-style: none;
+}
+.produk-5 {
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;  
+  width: 80%;               
+  height: 600px;
+  background-color: lightgray;    
+                  
+}
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  flex-direction: column;
+  line-break: 100px;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 23px;
+  font-size: 13px;
+}
+.socials{
+  list-style: none;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials i{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.container-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  height: 100vh;
+}
+
+iframe {
+  width: 500px;
+  height: 350px;
+}
+
+form {
+  width: 600px;
+  padding: 1em;
+}
+
+form input {
+  background: white;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+form button {
+  border-radius: 5px;
+  background:lightgray;
+  padding: 0.7em;
+  border: 0;
+}
+
+form button:hover {
+  background: black;
+  color: white;
+}
+
+#isi {
+  height: 100px;
+}
+
+label {
+  text-align: right;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+input:focus {
+  outline: 3px solid black;
+}
+
+.catalouge-image {
+  height: 100vh;
+}
+
+#catalouge{
+  margin: 0 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 100vh;
+}
+
+.catalouge-title {
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+.catalouge-image {
+  width: 30%;
+  height: 50%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.catalouge-text {
+  margin: 0 10%;
+  line-height: 25px;
+}
+
+.catalouge-button {
+  margin-top: 20px;
+}
+
+.ourTeam-hedding p{
+  color: #979797;
+}
+.ourTeam-hedding strong{
+  color: black;
+}
+
+.ourTeam-hedding{
+  padding-bottom: 110px;
+  
+}
+.ourTeam-hedding h1{
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.ourTeam-box{
+  width: 21em;
+  border-radius: 2px;
+  border-top: 6px solid gray;
+  background-color: whitesmoke;
+  margin-bottom: 60px;
+}
+.section1{
+  padding: 50px 0px 50px 0px;
+}
+.section1 img{
+  border-radius: 50%;
+  background-color: black;
+  height: 130px;
+  width: 130px;
+}
+.section2 p{
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 1px;
+}
+.section2 span{
+  color: #979597;
+}
+.section3{
+  background-color: gray;
+}
+.section3 i{
+  color: #ffffff !important;
+  padding: 15px;
+  font-size: 15px;
+}
+
+/* cart */
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+
+
+/* Responsive */
+
+/* Ukuran Handphone */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-top: 30px;
+  }
+  .icon-card {
+    width: 100px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  nav{
+    z-index: 9999;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0; 
+    margin-top: 6.2em;
+    flex-direction: column;
+    top: 0;
+    width: 35%;
+    height: 100vh;
+    background-color: black;
+    justify-content: space-evenly;
+    transform: translateX(0);
+    transition: all 0.5s;
+    opacity: 100;
+  }
+
+  nav ul.slide {
+    transition:0.5s;
+    transform: translateX(100%);
+    opacity: 0; 
+  }
+
+  .button-carousel {
+    z-index: 9999;
+  }
+
+  .footer-img {
+    width: 50%;
+  }
+
+  .footer-content p {
+  font-size: 10px;
+  padding: 0 15px;
+  }
+
+  #catalouge {
+  height: 500px;
+  font-size: 14.5px;
+  width: 350px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+  .container-produk {
+    margin-top: 4em;
+  }
+
+  .gambar-product {
+    position: relative;
+    width: 200px;
+    right: 185px;
+    bottom: 90px;
+  }
+
+  .shop-item-title {
+    position: relative;
+    left: 150px;
+    top: 120px;
+  }
+  .shop-item-title2 {
+    position: relative;
+    left: 150px;
+    top: 110px;
+  }
+
+  #title-shop {
+    font-size: 20px;
+  }
+  #title-shop2 {
+    font-size: 20px;
+  }
+  
+  #keyboard2 {
+    width: 130%;
+    margin-left: -17%;
+    margin-top: 20%;
+  }
+
+  #mouse1{
+    width: 98%;
+    margin-top: 7%;
+  }
+  #mouse2{
+    width: 98%;
+    margin-top: 7%;
+  }
+  #headset1 {
+    margin-top: 5%;
+  }
+
+  #selengkapnya {
+    position: relative;
+    font-size: 13px;
+    left: 245px;
+    top: 100px;
+  }
+
+  #cart {
+    position: relative;
+    font-size: 13px;
+    left: 237px;
+    top: 100px;
+  }
+
+  #harga {
+    position: relative;
+    left: 245px;
+    font-size: 28px;
+    top: 100px;
+  }
+
+  /* cart */
+  .cart-header {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cart-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .cart-row {
+    display: flex;
+  }
+  
+  .cart-item {
+    width:55%;
+    font-size: 43%;
+  }
+  
+  .cart-price {
+    font-size: 43%;
+    color: #333;
+    transform: translateX(-15px);
+  }
+  
+  .cart-quantity {
+    font-size: 43%;
+    width:35%;
+    transform: translateX(25px);
+  }
+  
+  .cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 100%;               
+  }
+  
+  .cart-item-image {
+    width: 45px;
+    height: auto;
+    border-radius: 10px;
+    transform: translateX(-10.5px);
+  }
+  .cart-quantity-input {
+    height: 13px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 80%em;
+    margin-right: 25px;
+  }
+  
+  .cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .cart-total-title {
+    font-weight: bold;
+    font-size: 43%;
+    color: black;
+    margin-right: 20px;
+  }
+  
+  .cart-total-price {
+    color: #333;
+    font-size: 43%;
+  }
+  
+
+  .container-contact {
+  padding-top: 2em;
+  }
+
+  .maps {
+    width: 330px;
+    height: 500px;
+  }
+
+  iframe {
+    margin-top: -30px;
+  }
+
+  .produk {
+  width: 100px;
+  }
+
+  .modal {
+    width: 100px;
+  }
+
+
+}
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  nav {
+  z-index: 9999;
+  }
+  
+  nav ul {
+    width: 65%;
+  }
+
+  .logo {
+    margin-top: 28px;
+  }
+
+  .catalouge-title {
+    margin-top: 5px;
+  }
+
+  .shop-item {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .shop-item-title {
+    font-size: xx-large;
+    margin-left: 175px;
+  }
+  .shop-item-title2 {
+    font-size: xx-large;
+    margin-left: 175px;
+  }
+
+
+  #gambar-product {
+    margin-right: 20px;
+  }
+
+  #keyboard1 {
+    margin-top: 7%;
+    padding-right: 2%;
+  }
+
+  #keyboard2 {
+    margin-top: 10%;
+    padding-right: 2%;
+  }
+
+  #mouse1{
+    margin-top: 14%;
+  }
+
+  #mouse2{
+    margin-top: 14%;
+  }
+
+  #headset1 {
+    margin-top: 10%;
+  }
+
+  #headset2 {
+    margin-top: 10%;
+  }
+
+  .button1 {
+    position: relative;
+    left: 94px;
+  }
+
+  .harga {
+    position: relative;
+    left: 80px;
+  }
+
+  iframe {
+    width: 700px;
+    height: 500px;
+  }
+
+  .form1{
+    width: 370px;
+  }
+
+  .container-contact {
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ourTeam-box {
+    width: 20em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  nav {
+    z-index: 9999;
+    }
+    
+    nav ul {
+      width: 65%;
+    }
+  
+    .logo {
+      margin-top: 28px;
+    }
+
+  /* cart */
+  .cart-header {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cart-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .cart-row {
+    display: flex;
+  }
+  
+  .cart-item {
+    width:85%;
+    font-size: 100%;
+  }
+  
+  .cart-price {
+    width: 75%;
+    font-size: 100%;
+    color: #333;
+  }
+  
+  .cart-quantity {
+    font-size: 100%;
+    width:40%;
+  }
+  
+  .cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 100%;               
+  }
+  
+  .cart-item-image {
+    width: 65px;
+    height: auto;
+    border-radius: 10px;
+    transform: translateX(-5.5px);
+  }
+  .cart-quantity-input {
+    height: 25px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 100%;
+    margin-right: 25px;
+  }
+  
+  .cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  .cart-total-title {
+    font-weight: bold;
+    font-size: 100%;
+    color: black;
+    margin-right: 20px;
+  }
+  
+  .cart-total-price {
+    color: #333;
+    font-size: 100%;
+  }
+  
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+  .logo {
+    margin-top: 29px;
+  }
+
+  nav {
+    z-index: 9999;
+    }
+
+  nav ul {
+      width: 50%;
+    }
+
+  .carousel-inner {
+    margin-top: -0.1em;
+  }
+
+  #catalouge {
+    height: 650px;
+  }
+
+  .catalouge-image {
+    height: auto;
+  }
+
+  form {
+    width: 420px;
+  }
+
+  .container-produk {
+    margin-top: 8em;
+  }
+
+  #cart1 {
+    position: relative;
+    right: 30px;
+  }
+
+  #selengkapnya1 {
+    position: relative;
+    right: 30px;
+  }
+  #cart2 {
+    position: relative;
+    right: 20px;
+  }
+
+  #selengkapnya2 {
+    position: relative;
+    right: 20px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .logo {
+    margin-top: 27px;
+  }
+
+  nav {
+    z-index: 9999;
+    }
+
+}

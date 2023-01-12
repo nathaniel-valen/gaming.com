@@ -1,0 +1,347 @@
+<!-- 
+  Team 3 - Gaming.com
+  ======================
+  2272003 - Ravel Setiady
+  2272028 - Nathaniel Valentino Robert 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Gaming.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="icon" href="assett/icon.png">
+  </head>
+<body>
+  
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="assett/Logo Nama.png" alt="" width="150px"></a>
+    </div>
+    <ul class="slide">
+      <li><a href="product.html">Product</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="testi.html">Testimony</a></li>
+      <li><a><button type="button" style="background-color: black; color: white; border: none;" class="fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <li><i class="fa fa-cart-shopping"></i></button></a></li>
+      </button></a></li><a href="logout.php"><i class="fa fa-sign-out fa-lg white-color"></i></a>
+    </ul>
+
+    <div class="menu-toggle">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    </div>
+
+  </nav>
+  <!-- end Navbar -->
+  
+  <section class="container content-section">
+    <div class="modalpopup"></div>
+    <div class="container-produk shop-items">
+      <div class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Lenovo </p>
+          <p id="title-shop2" class="shop-item-title2"> Legion 5</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal" data-bs-target="#legion5">
+              More Information
+            </button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+              <p id="harga" class="harga shop-item-price"> Rp 21.019.000 </p>
+            </div>
+          <div id="gambar-product" class="gambar-product legion5">
+            <img src="assett/product/legion5.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div id="rog" class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">ASUS ROG</p>
+          <p id="title-shop2" class="shop-item-title2">Zephyrus Duo</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal" data-bs-target="#rog">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+              <p id="harga" class="harga shop-item-price"> Rp 35.319.000 </p>
+            </div>
+            <div id="gambar-product" class="gambar-product rog">
+              <img src="assett/product/rog.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div id="omen" class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">HP Omen</p>
+          <p id="title-shop2" class="shop-item-title2">16</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal" data-bs-target="#omen">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 21.824.000 </p>
+          </div>
+          <div id="gambar-product" class="gambar-product omen">
+            <img src="assett/product/omen.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Rexus</p>
+          <p id="title-shop2" class="shop-item-title2">Daxa M71</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal"
+              data-bs-target="#keyboard1">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+          </div>
+          <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 849.900 </p>
+          </div>
+          <div id="gambar-product" class="gambar-product keyboard1">
+            <img id="keyboard1" src="assett/product/keyboard1.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Logitech</p>
+          <p id="title-shop2" class="shop-item-title2">G512 Carbon</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal"
+              data-bs-target="#keyboard2">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+              <p id="harga" class="harga shop-item-price"> Rp 1.319.000 </p>    
+          </div>
+          <div id="gambar-product" class="gambar-product keyboard2">
+            <img id="keyboard2" src="assett/product/keyboard2.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Razer Basilisk</p>
+          <p id="title-shop2" class="shop-item-title2">V3 Pro</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal" data-bs-target="#mouse1">
+              SelengkapnyMore Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 2.679.000 </p>
+          </div>
+          <div id="gambar-product" class="gambar-product mouse1">
+            <img id="mouse1" src="assett/product/mouse1.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Logitech</p>
+          <p id="title-shop2" class="shop-item-title2">G502</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal" data-bs-target="#mouse2">
+              SelengkapnyMore Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 659.000 </p>
+          </div>
+          <div id="gambar-product" class="gambar-product mouse2">
+            <img id="mouse2" src="assett/product/mouse2.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Hyper X</p>
+          <p id="title-shop2" class="shop-item-title2">Cloud II</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal"
+              data-bs-target="#headset1">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 1.070.000 </p>
+          </div>
+          <div id="gambar-product" class="gambar-product headset1">
+            <img id="headset1" src="assett/product/headset1.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Razer Kraken</p>
+          <p id="title-shop2" class="shop-item-title2">V3 Pro</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal"
+              data-bs-target="#headset2">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 2.599.000 </p>
+          </div>
+          <div id="gambar-product" class="gambar-product headset2">
+            <img id="headset2" src="assett/product/headset2.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div id="deskmat1" class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Tenjin</p>
+          <p id="title-shop2" class="shop-item-title2">KIKKO Ruby</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal"
+              data-bs-target="#deskmat1">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 358.000 </p>
+          </div>
+          <div id="gambar-product" class="gambar-product deskmat1">
+            <img src="assett/product/deskmat1.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+      <div id="deskmat2" class="shop-item">
+        <div class="nama-produk">
+          <p id="title-shop" class="shop-item-title">Tenjin</p>
+          <p id="title-shop2" class="shop-item-title2">TSUKOYOMI</p>
+          <div class="button-produk">
+            <!-- Button trigger modal -->
+            <button type="button" id="selengkapnya" class="btn btn-outline-dark button1 btn-sm" data-bs-toggle="modal"
+              data-bs-target="#deskmat2">
+              More Information
+            </button>
+            <button data-bs-toggle="modal" data-bs-target="#modal-add-to-cart" type="button" id="cart" class="btn btn-outline-dark shop-item-button button1 btn-sm">Add to Cart</button>
+            </div>
+            <div class="harga-produk">
+            <p id="harga" class="harga shop-item-price"> Rp 359.000 </p>  
+          </div>
+          <div id="gambar-product" class="gambar-product deskmat2">
+            <img src="assett/product/deskmat2.png" alt="" class="shop-item-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Button trigger modal -->
+
+
+<!-- Modal Cart-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <section class="container content-section">
+    
+          <h2 class="section-header">CART</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" style="--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 0.9rem;" type="button">PURCHASE</button>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+   
+  </div>
+
+  <!-- Modal Add To Cart -->
+
+  <div class="modal fade" id="modal-add-to-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Product succes added to cart</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+        <img class="footer-img" src="assett/Logo Nama.png" width="15%" alt="">
+        <p class="footer-p">Gaming.com is a website that sells several laptop and gaming gear products from various brands that are suitable for gamers.</p>
+        <section class="socials">
+            <a href="https://www.instagram.com/gaming.com_store/"><i class="fa fa-instagram"></i></a> 
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJZMXnzmjkNqhsVvJSrPScBFgXqlxxlwKfrKQZxCcSvdrdvnTxTJLPTSzpjNffwlSzJv"><i class="fa fa-envelope"></i></a>  
+            <a href="https://youtube.com"><i class="fa fa-youtube"></i></a> 
+        </section>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2022 Gaming.com</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/234e93a26a.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="product.js"></script>
+</body>
+</html>
