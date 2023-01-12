@@ -112,6 +112,16 @@ nav ul li a:hover {
     padding-bottom: 70px;
     flex-wrap: wrap;
   }
+
+  #testi {
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+  }
   
   .card-product-index{
     width: 300px;
@@ -127,17 +137,6 @@ nav ul li a:hover {
     justify-content: center;
     transition: 0.5s;
   }
-
-  .container-testi {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .testi-image {
-    border-radius: 100% ;
-  }
-
   .card-testi{
     width: 300px;
     height: 400px;
@@ -151,6 +150,11 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+  }
+
+  .testi-image {
+    border-radius: 100%;
+    margin-bottom: 20px;
   }
 
 .shop-items {
@@ -829,7 +833,6 @@ input:focus {
   .modal {
     width: 100px;
   }
-
 
 }
 /* Ukuran Tablet */
